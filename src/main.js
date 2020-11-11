@@ -14,9 +14,9 @@ router.beforeEach((to, from, next)=>{
     }
   }
   console.log("localStorage.getItem.login",localStorage)
-  if(to.path=="/main"&&localStorage.login=="false"){
-    router.replace('/home/login');
-  }
+  // if(to.path=="/main"&&localStorage.login=="false"){
+  //   router.replace('/home/login');
+  // }
   next();   // 确保要调用 next 方法，否则钩子就不会被 resolved(发生阻塞)
 });
 

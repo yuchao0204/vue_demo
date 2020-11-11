@@ -34,8 +34,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect:"/home/login",//登录
-    // redirect:"/main"
+    // redirect:"/home/login",//登录
+    redirect:"/main"
   },
   {
     path: '/main',

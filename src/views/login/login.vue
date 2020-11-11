@@ -44,7 +44,8 @@ export default {
                 password: this.form.password,
             };
             console.log("params",params);
-            request({url:urlStr+'login',params: params}).then(res => {
+            // request({url:urlStr+'login',params: params}).then(res => {
+                request({url:'http://localhost:3003/fileMd5',params: params}).then(res=>{
                 console.log("返回值res",res);
                 if(res.status==200){
                     if(res.data&&res.data.code==0){
